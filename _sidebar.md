@@ -3,7 +3,7 @@
 
 * **Performance Test**
   * [Overview](performance-test-overview.md)
-  * [Competition](competition.md)
+  * [Competition by Performance](competition-by-performance.md)
   * [TTI (Time to Interactive)](tti.md)
   * [FMP (First Meaningful Paint)](fmp.md)
   * [Page Speed Insights](page-speed-insights.md)
