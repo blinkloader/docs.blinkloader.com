@@ -1,4 +1,4 @@
-* **Getting started**
+* **Documentation**
   * [Home](/)
 
 * **Performance Test**
