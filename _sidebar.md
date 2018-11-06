@@ -8,12 +8,6 @@
   * [FMP (First Meaningful Paint)](fmp.md)
   * [Page Speed Insights](page-speed-insights.md)
 
-* **Express CDN**
-  * [Overview](express-cdn-overview.md)
-  * [JavaScript Optimization](js-optimization.md)
-  * [CSS Optimization](css-optimization.md)
-  * [Image Optimization](image-optimization.md)
-
 * **Automatic Image Optimizer**
   * [Overview](automatic-image-optimizer-overview.md)
   * [Image Component](image-component.md)
@@ -22,3 +16,9 @@
   * [Lazy Loading](lazy-loading.md)
   * [Progressive Loading](progressive-loading.md)
   * [Prefetching](prefetching.md)
+
+* **Express CDN**
+  * [Overview](express-cdn-overview.md)
+  * [JavaScript Optimization](js-optimization.md)
+  * [CSS Optimization](css-optimization.md)
+  * [Image Optimization](image-optimization.md)
