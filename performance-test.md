@@ -75,3 +75,8 @@ as well. The insights are very actionable and help to improve website performanc
 This is an example from the test results:
 
 <img src='https://cdn.staging-blinkloader.com/express/F8qwie8n2gJQf6STnPdrrCXHh/page_speed_insights.png' />
+
+## Read more about other products
+
+* [Automatic Image Optimizer](automatic-image-optimizer.md)
+* [Express CDN](express-cdn.md)
