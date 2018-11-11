@@ -45,7 +45,7 @@ and automatic optimization of images hosted on headless CMS.
 
 Unlike a bunch of disconnected expensive solutions, Blinkloader
 provides all vital tools within a simple delightful platform.
-We work hard on adding new featurs that make it even better.
+We work hard on adding new features that make it even better.
 
 ## Read more about our products
 
