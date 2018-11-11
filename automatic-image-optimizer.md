@@ -1,7 +1,8 @@
-* [Quickstart](automatic-image-optimizer-quickstart.md)
-* [Image Component](image-component.md)
-* [Image Block Component](image-block-component.md)
-* [Background Component](background-component.md)
-* [Lazy Loading](lazy-loading.md)
-* [Progressive Loading](progressive-loading.md)
-* [Prefetching](prefetching.md)
+# Automatic Image Optimizer
+## Quickstart
+## Image Component
+## Image Block Component
+## Background Component
+## Lazy Loading
+## Progressive Loading
+## Prefetching
