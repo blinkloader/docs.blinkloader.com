@@ -47,7 +47,7 @@ Unlike a bunch of disconnected expensive solutions, Blinkloader
 provides all vital tools within a simple delightful platform.
 We work hard on adding new featurs that make it even better.
 
-## Read more about our products?
+## Read more about our products
 
 * [Performance Test](performance-test.md)
 * [Automatic Image Optimizer](automatic-image-optimizer.md)
