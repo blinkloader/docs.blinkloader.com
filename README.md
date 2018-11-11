@@ -4,7 +4,7 @@
 
 Blinkloader is a new, more productive way to monitor and
 improve the health of your website. We take a holistic approach
-to discovering and fixing bottlenecks related with web performance,
+to discovering and fixing bottlenecks related to web performance,
 SEO and functional testing. New apps and features are added every
 month.
 
@@ -30,8 +30,8 @@ CDN link to start using the asset right away.
 
 ## Who uses Blinkloader?
 
-* **Developers** who don't want to deal with responsiveness, lazyloading and
-multiple image formats.
+* **Developers** who want FPS-friendly lazyloading, DPI detection, responsiveness
+and automatic optimization of images hosted on headless CMS.
 
 * **Marketers** who want to improve conversion rates of their landing pages.
 
@@ -47,7 +47,7 @@ Unlike a bunch of disconnected expensive solutions, Blinkloader
 provides all vital tools within a simple delightful platform.
 We work hard on adding new featurs that make it even better.
 
-## Further Reading
+## Read more about our products?
 
 * [Performance Test](performance-test.md)
 * [Automatic Image Optimizer](automatic-image-optimizer.md)
