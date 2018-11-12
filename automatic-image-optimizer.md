@@ -33,13 +33,13 @@ In your own project the value is different, copy your Project ID value and use i
 
 **Step 2. Add image sources to the whitelist.**
 
-Resource whitelist allow Blinkloader to protect your account from other
+Resource whitelist allows Blinkloader to protect your account from other
 people willing to do optimizations on your behalf.
 
 For example, if all images are located in a folder named `xyz`, then you can
-add the following: `example.com/xyz`.
+add `example.com/xyz` to the whitelist.
 
-This allows optimization of images such as:
+This lets optimization of images such as:
 * `https://example.com/xyz/logo.png`
 * `https://example.com/xyz/bg/foobar.png`
 
