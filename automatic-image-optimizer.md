@@ -75,7 +75,7 @@ Each one is described further.
 
 ### Image Component
 
-**Image** is used with an **<img/>** tag. Let's say that you have images in your HTML
+**Image** is used with an **img** tag. Let's say that you have images in your HTML
 layout specified with this tag, then in order to apply Blinkloader.js do the following:
 
 ```html
@@ -94,9 +94,11 @@ layout specified with this tag, then in order to apply Blinkloader.js do the fol
 />
 ```
 
+> Since you might want to copy some of the snippets above, progressive images and lazy loading are added by default. Remove respective data attributes, If you don't need those features.
+
 ### Image Block Component
 
-**Image block** is used with a **<div/>** tag. Have you seen smooth transitions on Medium? Making a smooth animated transition from blurry image into normal is tricky. That's why we have come up with this component. All other components support progressive image loading as well, but they don't support animation. Here is an example:
+**Image block** is used with a **div** tag. Have you seen smooth transitions on Medium? Making a smooth animated transition from blurry image into normal is tricky. That's why we have come up with this component. All other components support progressive image loading as well, but they don't support animation. Here is an example:
 
 ```html
 <div
@@ -107,6 +109,8 @@ layout specified with this tag, then in order to apply Blinkloader.js do the fol
   class="some classes"
 />
 ```
+
+> Since you might want to copy some of the snippets above, progressive images and lazy loading are added by default. Remove respective data attributes, If you don't need those features.
 
 ### Background Component
 
