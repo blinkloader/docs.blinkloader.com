@@ -15,7 +15,8 @@ Please select the type of the integration that would work best for you:
 
 ### Quickstart
 
-1. Create a project and copy the Project ID.
+
+**Step 1. Create a project and copy the Project ID.**
 
 Log into the dashboard using your Google account, then select a relevant project and go to the
 <a href='/automatic-image-optimizer' target='_blank'>automatic image optimizer app</a>.
@@ -28,10 +29,39 @@ Project ID can be taken from the right block.
 
 <img src='https://cdn.staging-blinkloader.com/express/2gzemB8EavusbVtQ0btwyawka/image_optimizer_project_id.png'/>
 
-In your own project the value is different, copy your Project ID value and use it the SDK.
+In your own project the value is different, copy your Project ID value and use it in the SDK.
 
-2. Connect JavaScript SDK by adding these scripts to your website pages.
-3. Now we are ready to optimize the images!
+**Step 2. Connect JavaScript SDK by adding these scripts to your website pages.**
+
+Connect JavaScript SDK by adding these scripts to your website pages.
+
+Add **blinkloader-2.0.5.min.js** to page head:
+
+```html
+<script src="https://cdn.blinkloader.com/blinkloader-2.0.5.min.js"></script>
+```
+
+Then add the following snippet to the bottom of page body. Here is an example:
+
+```html
+<html>
+  <head>
+    <!-- blinkloader sdk -->
+    <script src="https://cdn.blinkloader.com/blinkloader-2.0.5.min.js"></script>
+  </head>
+  <body>
+    <!-- your page content goes here -->    
+    <h1>Hello world!!!</h1>
+
+    <!-- blinkloader snippet at the bottom of page body -->
+    <script>
+      Blinkloader.optimize({projectId: "YOUR_PROJECT_ID_GOES_HERE"});
+    </script>
+  </body>
+</html>
+```
+
+**Step 3. Now we are ready to optimize the images!**
 
 There are three ways to add optimized images to your website. It's up to you
 to decide, which one you need according to your page layout.
@@ -44,8 +74,60 @@ Among the options are the following:
 Each one is described further.
 
 ### Image Component
+
+**Image** is used with an **<img/>** tag. Let's say that you have images in your HTML
+layout specified with this tag, then in order to apply Blinkloader.js do the following:
+
+```html
+<!-- This is an original image -->
+<img src="/photo.png"/>
+
+<!--
+  Same image with Blinkloader. We add a transparent pixel
+  as a placeholder to avoid glitches.
+-->
+<img
+  data-blink-src="/photo.png"
+  data-blink-progressive
+  data-blink-lazyload
+  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAABnRSTlMA/wD/AP83WBt9AAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC"
+/>
+```
+
 ### Image Block Component
+
+**Image block** is used with a **<div/>** tag. Have you seen smooth transitions on Medium? Making a smooth animated transition from blurry image into normal is tricky. That's why we have come up with this component. All other components support progressive image loading as well, but they don't support animation. Here is an example:
+
+```html
+<div
+  data-blink-image-block
+  data-blink-progressive
+  data-blink-lazyload
+  data-blink-src="/hello-world.jpg"
+  class="some classes"
+/>
+```
+
 ### Background Component
+
+**Background** is similar to **image block**, the difference is that **background** can be applied
+as a wrapper for other content. Previously mentioned elements don't accept child elements.
+Add **background** to your page in the following way:
+
+```html
+<div
+  data-blink-background
+  data-blink-progressive
+  data-blink-lazyload
+  data-blink-src="awesome_bg.png"
+  class="some classes"
+>
+  <h1>Hello world!</h1>
+</div>
+```
+
+> Since you might want to copy some of the snippets above, progressive images and lazy loading are added by default. Remove respective data attributes, If you don't need those features.
+
 ### Lazy Loading
 ### Progressive Loading
 ### Prefetching

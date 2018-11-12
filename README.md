@@ -14,11 +14,11 @@ If you have a website or a web-based product
 you can use Blinkloader to:
 
 * Identify if there is anything making your website load slowly.
-<a href='https://blinkloader.com/test' target='_blank'>Thanks to our performance test.</a>
+<a href='https://blinkloader.com/test' target='_blank'>Available via performance test.</a>
 
 * Discover how much faster your website should be to beat your
 SERP (search engine results page) competitors.
-<a href='https://blinkloader.com/test' target='_blank'>It's really helpful and also free.</a>
+<a href='https://blinkloader.com/test' target='_blank'>Also available via performance test.</a>
 
 * Optimize all website images automatically using our innovative
 technology.
