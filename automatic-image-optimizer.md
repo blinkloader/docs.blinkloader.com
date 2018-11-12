@@ -31,7 +31,11 @@ Project ID can be taken from the right block.
 
 In your own project the value is different, copy your Project ID value and use it in the SDK.
 
-**Step 2. Connect JavaScript SDK by adding these scripts to your website pages.**
+**Step 2. Add image sources to the whitelist.**
+
+
+
+**Step 3. Connect JavaScript SDK by adding these scripts to your website pages.**
 
 Connect JavaScript SDK by adding these scripts to your website pages.
 
@@ -61,7 +65,7 @@ Then add the following snippet to the bottom of page body. Here is an example:
 </html>
 ```
 
-**Step 3. Now we are ready to optimize the images!**
+**Step 4. Now we are ready to optimize the images!**
 
 There are three ways to add optimized images to your website. It's up to you
 to decide, which one you need according to your page layout.
@@ -94,8 +98,6 @@ layout specified with this tag, then in order to apply Blinkloader.js do the fol
 />
 ```
 
-> Since you might want to copy some of the snippets above, progressive images and lazy loading are added by default. Remove respective data attributes, If you don't need those features.
-
 ### Image Block Component
 
 **Image block** is used with a **div** tag. Have you seen smooth transitions on Medium? Making a smooth animated transition from blurry image into normal is tricky. That's why we have come up with this component. All other components support progressive image loading as well, but they don't support animation. Here is an example:
@@ -109,8 +111,6 @@ layout specified with this tag, then in order to apply Blinkloader.js do the fol
   class="some classes"
 />
 ```
-
-> Since you might want to copy some of the snippets above, progressive images and lazy loading are added by default. Remove respective data attributes, If you don't need those features.
 
 ### Background Component
 
@@ -133,8 +133,32 @@ Add **background** to your page in the following way:
 > Since you might want to copy some of the snippets above, progressive images and lazy loading are added by default. Remove respective data attributes, If you don't need those features.
 
 ### Lazy Loading
+
+Add `data-blink-lazyload` property to the HTML tag in order to apply lazyloading on the element.
+
 ### Progressive Loading
+
+Add `data-blink-progressive` property to the HTML tag in order to use progressive loading.
+Shows a blurry image before an original image is loaded.
+
 ### Prefetching
+
+This is an advanced feature allowing to load an optimized image in advance and to keep it
+in browser cache. This is useful when there are several website pages with images and you
+know, that visitors will go through them.
+
+With prefetching you can specify original images and then Blinkloader SDK prepares an
+optimized version and preloads it for a visitor. This approach enables instant image
+rendering, when new website pages are visited.
+
+Usage example:
+
+```js
+Blinkloader.prefetch([
+  'https://example.com/photo.png',
+  'https://example.com/another-photo.png'
+])
+```
 
 ## React/Next.js
 
