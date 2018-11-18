@@ -1,6 +1,4 @@
-<div style="font-size: 2rem; margin: 0 0 1rem;">Automatic Image Optimizer</div>
-
-## Plain HTML + JavaScript SDK
+# Plain HTML + JavaScript SDK
 
 ### Quickstart
 

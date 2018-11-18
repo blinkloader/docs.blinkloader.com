@@ -1,6 +1,4 @@
-<div style="font-size: 2rem; margin: 0 0 1rem;">Automatic Image Optimizer</div>
-
-## React/Next.js
+# React/Next.js
 
 To achieve the best performance of your React/Next.js application, we'll be
 using our open sourced react-blinkloader-components, hosted on Github.
