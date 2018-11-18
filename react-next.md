@@ -1,4 +1,4 @@
-# Automatic Image Optimizer
+<div style="font-size: 2rem; margin: 0 0 1rem;">Automatic Image Optimizer</div>
 
 ## React/Next.js
 
