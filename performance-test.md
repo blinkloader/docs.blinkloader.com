@@ -18,29 +18,28 @@ Then enter a search query and the page you'd like to test. Here is an example:
 
 <img src='https://cdn.staging-blinkloader.com/express/0c0o6rfmA2PD1wg0tggidApum/performance_test_inputs.png' />
 
-It may take some time, because the system visits your website and waits until it's
+It may take some time because the system visits your website and waits until it's
 fully loaded. Then you should see the results.
 
 <img src='https://cdn.staging-blinkloader.com/express/2eSxrYuzquqFxxlJ0zsq81Qoz/performance_test_example.png' />
 
-Further you can read more about each metric and why it's useful.
+Further, you can read more about each metric and why it's useful.
 
 ## Competition by Performance
 
-Starting from July 2018 Google has began using page speed as a ranking factor for mobile searches.
+Starting from July 2018 Google has begun using page speed as a ranking factor for mobile searches.
 Blinkloader performance test helps you understand how much faster your website should be in order
 to outperform your SERP competitors.
 
 Here is an example. We'll take a website with many organic search keywords. In our case,
-that would be "upwork.com", with search keywords as "hire python developers".
+that would be "upwork.com," with search keywords as "hire python developers."
 
 <img src='https://cdn.staging-blinkloader.com/express/xBXJyWQE2aqor5RrBsI3mGNtn/performance_test_competitors.png' />
 
 The seconds on the left are either TTI (time to interactive) or FMP (time to first meaningful paint),
 depending on what you choose. You can switch between those in top bar filters.
 
-If you want your page to be among top 3 results for a particular search keyword, then speed is really
-important. This metric and insights are here for you to simplify the process.
+If you want your page to be among top 3 results for a particular search keyword, then speed is essential. These metrics and insights are here for you to simplify the process.
 
 ## FMP (First Meaningful Paint)
 

@@ -1,9 +1,7 @@
 # React/Next.js
 
-To achieve the best performance of your React/Next.js application, we'll be
-using our open sourced react-blinkloader-components, hosted on Github.
-This is a perfect solution, if you want to start loading images before
-other bundles and then smoothly switch to React based rendering
+To achieve the best performance of your React/Next.js application, we'll be using our open-sourced react-blinkloader-components, hosted on Github.
+This integration is a perfect solution if you want to start loading images before other bundles and then smoothly switch to React based rendering
 without any conflicts.
 
 ### Quickstart
@@ -17,18 +15,18 @@ You should see a dashboard similar to this:
 
 <img src='https://user-images.githubusercontent.com/1095400/47969500-7f60ca80-e02d-11e8-980b-508f14960c91.png'/>
 
-Project ID can be taken from the right block.
+Take Project ID from the block on the right.
 
 <img src='https://cdn.staging-blinkloader.com/express/2gzemB8EavusbVtQ0btwyawka/image_optimizer_project_id.png'/>
 
-In your own project the value is different, copy your Project ID value and use it in the SDK.
+In your project the value is different, copy your Project ID value and use it in the SDK.
 
 **Step 2. Add image sources to the whitelist.**
 
 Resource whitelist allows Blinkloader to protect your account from other
 people willing to do optimizations on your behalf.
 
-For example, if all images are located in a folder named `xyz`, then you can
+For example, if all images are in the folder named `xyz`, then you can
 add `example.com/xyz` to the whitelist.
 
 This lets optimization of images such as:
@@ -75,30 +73,14 @@ Here is an example with a JSX template:
 </html>
 ```
 
-> Blinkloader works fine with pure client-side rendering. However, server side rendering (further SSR) is
-highlhy recommended. With SSR images will start loading sooner, because the library
-starts rendering images before the application bundle is done loading.
+> Blinkloader works fine with pure client-side rendering. We highly recommend using server-side rendering (further SSR) for better performance. With SSR images start loading sooner because the library
+renders images before the application bundle becomes available.
 
 **Step 4. React components.**
 
 Install `react-blinkloader-components`:
 ```
 $ npm install --save @blinkloader/react-blinkloader-components
-```
-
-In the root component of your application:
-```js
-const blinkloader = require('@blinkloader/react-blinkloader-components');
-const { BlinkloaderProvider } = blinkloader;
-
-/// and then in the JSX, example:
-const MySuperApp = ({children}) => (
-  <BlinkloaderProvider projectId="YOUR_PROJECT_ID_GOES_HERE">
-    <div>{children}</div>
-  </BlinkloaderProvider>
-)
-
-export default MySuperApp;
 ```
 
 **Step 5. Now we are ready to optimize the images!**
@@ -123,15 +105,15 @@ const { Img } = require('@blinkloader/react-blinkloader-components');
 
 <Img
   className={customClasses}
-	src="https://example.com/hello.png"
-	lazyload={true}
-	progressive={true}
+    src="https://example.com/hello.png"
+    lazyload={true}
+    progressive={true}
 />
 ```
 
 ### Image Block Component
 
-Image block is used with a `div` tag. Have you seen smooth transitions on Medium? Making a smooth animated transition from blurry image into normal is tricky. That's why we have come up with this component. All other components support progressive image loading as well, but they don't support animation. Here is an example:
+`Image block` is used with a `div` tag. Have you seen smooth transitions on Medium? Making a smooth animated transition from a blurry image into normal is tricky. That's why we have come up with this component. All other components support progressive image loading as well, but they don't support animation. Here is an example:
 
 ```js
 const { ImgBlock } = require('@blinkloader/react-blinkloader-components');
@@ -166,14 +148,13 @@ const Photo = ({src, className}) => (
 )
 ```
 
-!> Keep in mind that `Background` and `ImgBlock` are divs. This is why they need to have some relative or absolute width and height parameters. So in case you switch from Img to these components keep this in mind. It's simple to do using CSS classes similar to other blocks in your layout.
+!> Keep in mind that `Background` and `ImgBlock` are divs. Thus they need to have some relative or absolute width and height parameters. So in case, you switch from `Img` to these components keep this in mind. It's simple to do using CSS classes similar to other blocks in your layout.
 
 ### Defer Attribute
 
-Add defer property to **Img** component, when you can't show images before the rest of the react bundle (ex: a slider on mobile devices). The layout may break if we render images without defer.
+Add `defer` property to **Img** component, when you can't show images before the rest of the react bundle (ex: a slider on mobile devices). The layout may break if we render images without defer.
 
-With defer you can start fetching optimized images before the bundle,
-but they are rendered on a page only when the bundle is ready.
+With defer you can start fetching optimized images before the bundle, they are rendered on a page only when the bundle is ready.
 
 ```js
 const { Img } = require('@blinkloader/react-blinkloader-components');
@@ -191,22 +172,22 @@ const Photo = ({src, className}) => (
 
 ### Lazy Loading
 
-Add `lazyload={true}` property to the react component in order to apply lazyloading on the element.
+Add `lazyload={true}` property to the react component to apply lazy loading on the element.
 
 ### Progressive Loading
 
-Add `progressive={true}` property to the react component in order to use progressive loading.
+Add `progressive={true}` property to the react component to use progressive loading.
 Shows a blurry image before an original image is loaded.
 
 ### Prefetching
 
-This is an advanced feature allowing to load an optimized image in advance and to keep it
-in browser cache. It is useful when there are several website pages with images and you
+Prefetching is an advanced feature allowing to load an optimized image in advance and to keep it
+in the browser cache. It is useful when there are several website pages with images and you
 know, that visitors will go through them.
 
-With prefetching you can specify original images and then Blinkloader SDK prepares an
+With prefetching, you can specify original images, and then Blinkloader SDK prepares an
 optimized version and preloads it for a visitor. This approach enables instant image
-rendering, when new website pages are visited.
+rendering when new website pages are visited.
 
 Usage example:
 
@@ -219,4 +200,4 @@ Blinkloader.prefetch([
 
 > In case of React it's recommended to put prefetching inside `componentDidMount`
 of the initial view. Then new pages or new elements rendered further will have instant
-images taken from browser cache.
+images taken from the browser cache.
