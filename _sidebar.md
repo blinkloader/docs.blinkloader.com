@@ -3,4 +3,3 @@
 * [Automatic Image Optimizer](automatic-image-optimizer.md)
   * [Plain HTML + JavaScript SDK](html-with-sdk.md)
   * [React/Next.js](react-next.md)
-* [Express CDN](express-cdn.md)
