@@ -51,4 +51,3 @@ We work hard on adding new features that make it even better.
 
 * [Performance Test](performance-test.md)
 * [Automatic Image Optimizer](automatic-image-optimizer.md)
-* [Express CDN](express-cdn.md)
