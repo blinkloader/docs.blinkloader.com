@@ -40,10 +40,10 @@ would be rejected and wouldn't be optimized.
 
 Connect JavaScript SDK by adding these scripts to your website pages.
 
-Add **blinkloader-2.0.5.min.js** to page head:
+Add **blinkloader-2.0.6.min.js** to page head:
 
 ```html
-<script src="https://cdn.blinkloader.com/blinkloader-2.0.5.min.js"></script>
+<script src="https://cdn.blinkloader.com/blinkloader-2.0.6.min.js"></script>
 ```
 
 Then add the following snippet to the bottom of page body, we need to
@@ -56,7 +56,7 @@ Here is an example with a JSX template:
 <html>
   <head>
     <!-- blinkloader sdk -->
-    <script src="https://cdn.blinkloader.com/blinkloader-2.0.5.min.js"></script>
+    <script src="https://cdn.blinkloader.com/blinkloader-2.0.6.min.js"></script>
   </head>
   <body>
     <!-- your server-side rendered application -->    
