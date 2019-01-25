@@ -4,7 +4,6 @@ Nice way to discover major website speed issues in the context of SEO.
 We've put all important metrics together and keep adding more.
 
 With the current version of the test you can see:
-* page speed insights
 * time to interactive
 * time to first meaningful paint
 * performance of your SERP competitors
@@ -66,16 +65,6 @@ This is an example from the test results:
 
 <img src='https://cdn.staging-blinkloader.com/express/1S8LElHDmL367jT1JhBTkbv2m/performance_test_tti.png' />
 
-## Page Speed Insights
-
-One more gem from Google is their Page Speed Insights service. We decided to add those insights to the test
-as well. The insights are very actionable and help to improve website performance significantly.
-
-This is an example from the test results:
-
-<img src='https://cdn.staging-blinkloader.com/express/F8qwie8n2gJQf6STnPdrrCXHh/page_speed_insights.png' />
-
 ## Read more about other products
 
 * [Automatic Image Optimizer](automatic-image-optimizer.md)
-* [Express CDN](express-cdn.md)
