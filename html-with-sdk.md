@@ -5,7 +5,7 @@
 **Step 1. Create a project and copy the Project ID.**
 
 Log into the dashboard using your Google account, then select a relevant project and go to the
-<a href='/automatic-image-optimizer' target='_blank'>automatic image optimizer app</a>.
+<a href='/image-optimizer' target='_blank'>automatic image optimizer app</a>.
 
 You should see a dashboard similar to this:
 
